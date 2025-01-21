@@ -5,6 +5,12 @@ Session-28 Optimizing Neural Network
 Achieved 2.5x speed compared to original unoptimized model. Unoptimzed model takes roughly 350ms, where as optimized model takes 140ms. Which is close to 2.5x.
 Logs are below
 
+Otimization techniques used:
+1. model.compile
+2. autocast
+3. `data.to(device, non_blocking=True)`
+4. input data/images to FP16 from FP32
+
 # Logs
 ## Without optimization
 ```
